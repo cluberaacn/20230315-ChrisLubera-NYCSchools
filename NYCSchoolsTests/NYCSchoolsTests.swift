@@ -6,31 +6,22 @@
 //
 
 import XCTest
+import CoreLocation
 @testable import NYCSchools
 
+// Here's a few tests to demonstrate unit testing, given more time I'd create a lot more
+
 final class NYCSchoolsTests: XCTestCase {
+    
+    let fakeSchool = School(dbn: "123", school_name: "Fake school with Lat and Lon", primary_address_line_1: "500 W Madison St", city: "Chicago", zip: "60661", state_code: "IL", latitude: "41.8822", longitude: "-87.6402")
+    
+    let fakeSchoolNoLatAndLon = School(dbn: "456", school_name: "Fake school with no Lat and Lon", primary_address_line_1: "500 W Madison St", city: "Chicago", zip: "60661", state_code: "IL", latitude: nil, longitude: nil)
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testReturnCoordinatesWhenSchoolHasCoordinates() throws {
+        XCTAssertTrue(fakeSchool.returnCoordinates().latitude == 41.8822)
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    func testReturnCoordinatesWhenSchoolHasNoCoordinates() throws {
+        XCTAssertTrue(fakeSchoolNoLatAndLon.returnCoordinates().latitude == 40.7831)
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }

@@ -8,23 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		FB1D77EE29C20CA100EB404B /* NYCSchoolsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1D77ED29C20CA100EB404B /* NYCSchoolsApp.swift */; };
-		FB1D77F029C20CA100EB404B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1D77EF29C20CA100EB404B /* ContentView.swift */; };
+		FB1D77F029C20CA100EB404B /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1D77EF29C20CA100EB404B /* ListView.swift */; };
 		FB1D77F229C20CA400EB404B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB1D77F129C20CA400EB404B /* Assets.xcassets */; };
 		FB1D77F529C20CA400EB404B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB1D77F429C20CA400EB404B /* Preview Assets.xcassets */; };
-		FB1D77FF29C20CA500EB404B /* NYCSchoolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1D77FE29C20CA500EB404B /* NYCSchoolsTests.swift */; };
-		FB1D780929C20CA500EB404B /* NYCSchoolsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1D780829C20CA500EB404B /* NYCSchoolsUITests.swift */; };
-		FB1D780B29C20CA500EB404B /* NYCSchoolsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1D780A29C20CA500EB404B /* NYCSchoolsUITestsLaunchTests.swift */; };
+		FB1D781B29C20D6C00EB404B /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1D781A29C20D6C00EB404B /* ListViewModel.swift */; };
+		FB1D781D29C20F4300EB404B /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1D781C29C20F4300EB404B /* School.swift */; };
+		FB1D781F29C20F5100EB404B /* SATScoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1D781E29C20F5100EB404B /* SATScoreModel.swift */; };
+		FB1D782529C2104A00EB404B /* NetworkCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1D782429C2104A00EB404B /* NetworkCalls.swift */; };
+		FB1D782729C212A500EB404B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1D782629C212A500EB404B /* DetailView.swift */; };
+		FB1D782929C213F100EB404B /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1D782829C213F100EB404B /* MapView.swift */; };
+		FB1D782D29C2193400EB404B /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1D782C29C2193400EB404B /* DetailViewModel.swift */; };
+		FB1D783329C2465700EB404B /* SATScores.json in Resources */ = {isa = PBXBuildFile; fileRef = FB1D783129C2465700EB404B /* SATScores.json */; };
+		FB1D783429C2465700EB404B /* NYCSchools.json in Resources */ = {isa = PBXBuildFile; fileRef = FB1D783229C2465700EB404B /* NYCSchools.json */; };
+		FBB957AE29C261330087E656 /* ResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB957AD29C261330087E656 /* ResponseError.swift */; };
+		FBD0A7CD29CA3D15006FBB69 /* NYCSchoolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1D77FE29C20CA500EB404B /* NYCSchoolsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		FB1D77FB29C20CA500EB404B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FB1D77E229C20CA100EB404B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FB1D77E929C20CA100EB404B;
-			remoteInfo = NYCSchools;
-		};
-		FB1D780529C20CA500EB404B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FB1D77E229C20CA100EB404B /* Project object */;
 			proxyType = 1;
@@ -36,14 +37,22 @@
 /* Begin PBXFileReference section */
 		FB1D77EA29C20CA100EB404B /* NYCSchools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYCSchools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB1D77ED29C20CA100EB404B /* NYCSchoolsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCSchoolsApp.swift; sourceTree = "<group>"; };
-		FB1D77EF29C20CA100EB404B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FB1D77EF29C20CA100EB404B /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		FB1D77F129C20CA400EB404B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB1D77F429C20CA400EB404B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FB1D77FA29C20CA500EB404B /* NYCSchoolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYCSchoolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB1D77FE29C20CA500EB404B /* NYCSchoolsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCSchoolsTests.swift; sourceTree = "<group>"; };
-		FB1D780429C20CA500EB404B /* NYCSchoolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYCSchoolsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB1D780829C20CA500EB404B /* NYCSchoolsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCSchoolsUITests.swift; sourceTree = "<group>"; };
-		FB1D780A29C20CA500EB404B /* NYCSchoolsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYCSchoolsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FB1D781A29C20D6C00EB404B /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		FB1D781C29C20F4300EB404B /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
+		FB1D781E29C20F5100EB404B /* SATScoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SATScoreModel.swift; sourceTree = "<group>"; };
+		FB1D782429C2104A00EB404B /* NetworkCalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCalls.swift; sourceTree = "<group>"; };
+		FB1D782629C212A500EB404B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		FB1D782829C213F100EB404B /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		FB1D782C29C2193400EB404B /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		FB1D783129C2465700EB404B /* SATScores.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SATScores.json; sourceTree = "<group>"; };
+		FB1D783229C2465700EB404B /* NYCSchools.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NYCSchools.json; sourceTree = "<group>"; };
+		FBB957AD29C261330087E656 /* ResponseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseError.swift; sourceTree = "<group>"; };
+		FBF92A1E29C8F6750093563E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,13 +70,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FB1D780129C20CA500EB404B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -76,7 +78,6 @@
 			children = (
 				FB1D77EC29C20CA100EB404B /* NYCSchools */,
 				FB1D77FD29C20CA500EB404B /* NYCSchoolsTests */,
-				FB1D780729C20CA500EB404B /* NYCSchoolsUITests */,
 				FB1D77EB29C20CA100EB404B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,7 +87,6 @@
 			children = (
 				FB1D77EA29C20CA100EB404B /* NYCSchools.app */,
 				FB1D77FA29C20CA500EB404B /* NYCSchoolsTests.xctest */,
-				FB1D780429C20CA500EB404B /* NYCSchoolsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,9 +94,14 @@
 		FB1D77EC29C20CA100EB404B /* NYCSchools */ = {
 			isa = PBXGroup;
 			children = (
+				FBF92A1E29C8F6750093563E /* Info.plist */,
 				FB1D77ED29C20CA100EB404B /* NYCSchoolsApp.swift */,
-				FB1D77EF29C20CA100EB404B /* ContentView.swift */,
+				FB1D781729C20D3E00EB404B /* View */,
+				FB1D781829C20D4900EB404B /* ViewModel */,
+				FB1D781929C20D5200EB404B /* Model */,
 				FB1D77F129C20CA400EB404B /* Assets.xcassets */,
+				FB1D783229C2465700EB404B /* NYCSchools.json */,
+				FB1D783129C2465700EB404B /* SATScores.json */,
 				FB1D77F329C20CA400EB404B /* Preview Content */,
 			);
 			path = NYCSchools;
@@ -118,13 +123,42 @@
 			path = NYCSchoolsTests;
 			sourceTree = "<group>";
 		};
-		FB1D780729C20CA500EB404B /* NYCSchoolsUITests */ = {
+		FB1D781729C20D3E00EB404B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FB1D780829C20CA500EB404B /* NYCSchoolsUITests.swift */,
-				FB1D780A29C20CA500EB404B /* NYCSchoolsUITestsLaunchTests.swift */,
+				FB1D77EF29C20CA100EB404B /* ListView.swift */,
+				FB1D782629C212A500EB404B /* DetailView.swift */,
+				FB1D782829C213F100EB404B /* MapView.swift */,
 			);
-			path = NYCSchoolsUITests;
+			path = View;
+			sourceTree = "<group>";
+		};
+		FB1D781829C20D4900EB404B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FB1D781A29C20D6C00EB404B /* ListViewModel.swift */,
+				FB1D782C29C2193400EB404B /* DetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FB1D781929C20D5200EB404B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB1D782429C2104A00EB404B /* NetworkCalls.swift */,
+				FBF92A1B29C372CE0093563E /* Objects */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FBF92A1B29C372CE0093563E /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				FB1D781C29C20F4300EB404B /* School.swift */,
+				FB1D781E29C20F5100EB404B /* SATScoreModel.swift */,
+				FBB957AD29C261330087E656 /* ResponseError.swift */,
+			);
+			path = Objects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +177,8 @@
 			dependencies = (
 			);
 			name = NYCSchools;
+			packageProductDependencies = (
+			);
 			productName = NYCSchools;
 			productReference = FB1D77EA29C20CA100EB404B /* NYCSchools.app */;
 			productType = "com.apple.product-type.application";
@@ -165,24 +201,6 @@
 			productReference = FB1D77FA29C20CA500EB404B /* NYCSchoolsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		FB1D780329C20CA500EB404B /* NYCSchoolsUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FB1D781429C20CA500EB404B /* Build configuration list for PBXNativeTarget "NYCSchoolsUITests" */;
-			buildPhases = (
-				FB1D780029C20CA500EB404B /* Sources */,
-				FB1D780129C20CA500EB404B /* Frameworks */,
-				FB1D780229C20CA500EB404B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FB1D780629C20CA500EB404B /* PBXTargetDependency */,
-			);
-			name = NYCSchoolsUITests;
-			productName = NYCSchoolsUITests;
-			productReference = FB1D780429C20CA500EB404B /* NYCSchoolsUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -200,10 +218,6 @@
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = FB1D77E929C20CA100EB404B;
 					};
-					FB1D780329C20CA500EB404B = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = FB1D77E929C20CA100EB404B;
-					};
 				};
 			};
 			buildConfigurationList = FB1D77E529C20CA100EB404B /* Build configuration list for PBXProject "NYCSchools" */;
@@ -215,13 +229,14 @@
 				Base,
 			);
 			mainGroup = FB1D77E129C20CA100EB404B;
+			packageReferences = (
+			);
 			productRefGroup = FB1D77EB29C20CA100EB404B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				FB1D77E929C20CA100EB404B /* NYCSchools */,
 				FB1D77F929C20CA500EB404B /* NYCSchoolsTests */,
-				FB1D780329C20CA500EB404B /* NYCSchoolsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -231,19 +246,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB1D783429C2465700EB404B /* NYCSchools.json in Resources */,
 				FB1D77F529C20CA400EB404B /* Preview Assets.xcassets in Resources */,
+				FB1D783329C2465700EB404B /* SATScores.json in Resources */,
 				FB1D77F229C20CA400EB404B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		FB1D77F829C20CA500EB404B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FB1D780229C20CA500EB404B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -257,8 +267,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB1D77F029C20CA100EB404B /* ContentView.swift in Sources */,
+				FB1D77F029C20CA100EB404B /* ListView.swift in Sources */,
+				FB1D782929C213F100EB404B /* MapView.swift in Sources */,
 				FB1D77EE29C20CA100EB404B /* NYCSchoolsApp.swift in Sources */,
+				FB1D782D29C2193400EB404B /* DetailViewModel.swift in Sources */,
+				FB1D781B29C20D6C00EB404B /* ListViewModel.swift in Sources */,
+				FBB957AE29C261330087E656 /* ResponseError.swift in Sources */,
+				FB1D782729C212A500EB404B /* DetailView.swift in Sources */,
+				FB1D782529C2104A00EB404B /* NetworkCalls.swift in Sources */,
+				FB1D781F29C20F5100EB404B /* SATScoreModel.swift in Sources */,
+				FB1D781D29C20F4300EB404B /* School.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,16 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB1D77FF29C20CA500EB404B /* NYCSchoolsTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FB1D780029C20CA500EB404B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FB1D780929C20CA500EB404B /* NYCSchoolsUITests.swift in Sources */,
-				FB1D780B29C20CA500EB404B /* NYCSchoolsUITestsLaunchTests.swift in Sources */,
+				FBD0A7CD29CA3D15006FBB69 /* NYCSchoolsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,11 +295,6 @@
 			isa = PBXTargetDependency;
 			target = FB1D77E929C20CA100EB404B /* NYCSchools */;
 			targetProxy = FB1D77FB29C20CA500EB404B /* PBXContainerItemProxy */;
-		};
-		FB1D780629C20CA500EB404B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FB1D77E929C20CA100EB404B /* NYCSchools */;
-			targetProxy = FB1D780529C20CA500EB404B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -420,7 +424,7 @@
 				DEVELOPMENT_TEAM = THP5EV5EJ9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = NYCSchools/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -449,7 +453,7 @@
 				DEVELOPMENT_TEAM = THP5EV5EJ9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = NYCSchools/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -507,42 +511,6 @@
 			};
 			name = Release;
 		};
-		FB1D781529C20CA500EB404B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = THP5EV5EJ9;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.accenture.NYCSchoolsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = NYCSchools;
-			};
-			name = Debug;
-		};
-		FB1D781629C20CA500EB404B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = THP5EV5EJ9;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.accenture.NYCSchoolsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = NYCSchools;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -569,15 +537,6 @@
 			buildConfigurations = (
 				FB1D781229C20CA500EB404B /* Debug */,
 				FB1D781329C20CA500EB404B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FB1D781429C20CA500EB404B /* Build configuration list for PBXNativeTarget "NYCSchoolsUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FB1D781529C20CA500EB404B /* Debug */,
-				FB1D781629C20CA500EB404B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
